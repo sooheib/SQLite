@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase db=openOrCreateDatabase("MyDB",MODE_PRIVATE,null);
         db.execSQL("CREATE TABLE IF NOT EXISTS Person(LastName TEXT, FirstName TEXT,Age INT(3));");
         db.execSQL("INSERT INTO Person VALUES('Aranaha','selmi',33)");
-        db.execSQL("INSERT INTO Person VALUES('SOUHEIB','selmi',33)");
-        db.execSQL("INSERT INTO Person VALUES('AYMEN','selmi',33)");
+        db.execSQL("INSERT INTO Person VALUES('SOUHEIB','MOO',33)");
+        db.execSQL("INSERT INTO Person VALUES('AYMEN','sAAA',33)");
         db.close();
         Toast.makeText(this,"Database created",Toast.LENGTH_LONG).show();
     }
